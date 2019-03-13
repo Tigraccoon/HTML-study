@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>checkf</title>
+</head>
+<body>
+
+<form method="post" action="check_result.jsp" style="text-align: center; font-size: 30px">
+
+좋아하는 과일을 선택해라.<br>
+<!-- 체크박스의 name들은 같아야 같은 그룹으로 묶임 -->
+<!-- jsp에서는 배열로 읽어들임 -->
+<!-- checkbox는 라디오 버튼과 다르게 다중 선택 가능, checked 옵션으로 default값 설정 가능 -->
+<input type="checkbox" name="fruits" value="apple">사괏<br>
+<input type="checkbox" name="fruits" value="grape" checked="checked">포돞<br>
+<input type="checkbox" name="fruits" value="orange">오랜쥐<br>
+<input type="submit" value="확인">
+<input type="reset" value="선택 취소">
+</form>
+
+</body>
+</html>

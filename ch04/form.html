@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>form</title>
+<style type="text/css">
+ul{
+list-style-type: none;
+}
+fieldset{
+margin: auto;
+width: 400px;
+height: 200px;
+}
+
+</style>
+
+</head>
+<body style="text-align: center; font-size: 30px;">
+
+<h1>회원가입 양식</h1><br>
+<br>
+<form method="post" action="form_exam_result.jsp">
+
+<fieldset>
+<legend>로그인 정보</legend>
+	<ul>
+		<li>아이디 : <input type="text" name="user_id"></li>
+		<li>비밀번호 : <input type="password" name="pw"></li>
+	</ul>
+</fieldset>
+<br>
+<fieldset>
+<legend>가입자 정보</legend>
+	<ul>
+		<li>이름 : <input type="text" name="user_name"></li>
+		<li>이메일 : <input type="text" name="user_mail"></li>
+		<li>생년월일 : <input type="text" name="birth"></li>
+	</ul>
+</fieldset>
+<br>
+<fieldset style="width: 100px; height: 50px">
+	<input type="submit" value="가입하기">
+</fieldset>
+
+</form>
+
+
+</body>
+</html>

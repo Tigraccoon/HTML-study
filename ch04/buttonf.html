@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>buttonf</title>
+</head>
+<body style="text-align: center; font-size: 30px;">
+
+<script type="text/javascript">
+//자바스크립트 코드 영역
+// function 함수이름()
+function check(){
+	var price=document.input.price.value;
+	var amount=document.input.amount.value;
+	if(price =""){//값이 없으면 null이 아니라 공백으로 들어옴
+		alter("가격을 입력하세요..")	//경고창 띄우기
+		document.price.focus();	//포커스를 이동
+		return;	//함수를 호출 한 곳으로 되돌아감, 더이상 진행되지 않음
+	}
+	if(amount ==""){
+		alter("수량을 입력하세요..")
+		document.amount.focus();
+		return;
+	}
+	document.input.submit();	//submit()이라는 javascript의 내부함수로 값을 보냄
+	//여기서는 action="buttonf_result.jsp"로 사용자로부터 입력받은 가격과 수량을 전송
+	
+}
+
+
+</script>
+
+
+<form method="post" action="buttonf_result.jsp" name="input">
+
+<!-- submit : 제출버튼, button : 제출 기능이 없음 -->
+가격 : <input type="text" name="price"><br>
+수량 : <input type="text" name="amount"><br>
+<!-- 버튼을 클릭하면 자바스크립트의 check()함수가 실행됨 -->
+<!-- on이벤트 : onclick, onfocus, onchange, ... 등등 -->
+<input type="button" value="계산" onclick="check()">
+
+</form>
+
+</body>
+</html>

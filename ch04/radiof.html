@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>radiof</title>
+</head>
+<body>
+	
+	<!-- 
+	웹 프로그래밍에서 서버에 값을 전달할 때는 form태그를 사용함.
+	get 방식 : url이 노출되어 보안에 안 좋음, 데이터에 해더를 붙여 전송
+	post 방식 : url 노출이 안 됌, 대용량 전송에 유리, body를 통해 전송
+	
+	action="데이터를 받을 url"
+	 -->
+	
+	<form method="post" action="radiof_result.jsp">
+		이름 : <input type="text" name="name"><br>
+		나이 : <input type="text" name="age"><br>
+		성별 : <input type="radio" name="gender" value="male"> 남성
+				<input type="radio" name="gender" value="female"> 여성
+		<input type="submit" value="확인">	
+	</form>
+	
+</body>
+</html>

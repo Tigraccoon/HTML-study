@@ -1,0 +1,65 @@
+<!-- 192.168.0.235 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>score</title>
+<style type="text/css">
+body{display: table; margin: auto; text-align: center;}
+</style>
+<script type="text/javascript">
+function send(){
+	var kor=document.form1.kor.value;
+	var eng=document.form1.eng.value;
+	var mat=document.form1.mat.value;
+
+	if(kor==""){
+		alert("국어 점수를 입력하세욧!");
+		document.form1.kor.focus();
+		return;
+	}
+	if(eng==""){
+		alert("영어 점수를 입력하세욧!");
+		document.form1.eng.focus();
+		return;
+	}
+	if(mat==""){
+		alert("수학 점수를 입력하세욧!");
+		document.form1.mat.focus();
+		return;
+	}
+	document.form1.submit();
+} 
+</script>
+</head>
+<body>
+<br><br><br><br><br>
+
+<fieldset style="width: 230px">
+<legend><h3>입력</h3></legend>
+<form action="score.jsp" method="post" name="form1">
+
+<table>
+ <tr>
+  <th>국어 : </th>
+  <td><input type="text" name="kor"></td>
+ </tr>
+ <tr>
+  <th>영어 : </th>
+  <td><input type="text" name="eng"></td>
+ </tr>
+ <tr>
+  <th>수학 : </th>
+  <td><input type="text" name="mat"></td>
+ </tr>
+ <tr>
+  <th colspan="2"><input type="button" value="전송!" onclick="send()"></th>
+ </tr>
+</table>
+<br>
+</form>
+</fieldset>
+
+</body>
+</html>

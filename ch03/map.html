@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>map</title>
+</head>
+<body>
+	
+	<!-- 이미지 맵, usemap="#맵이름" -->
+	<img alt="애들" src="images/kids.jpg" usemap="#toymap" width="1000" height="1000"><br>
+	
+	<map name="toymap">
+		<!-- 원형 좌표 : coords="원점의 x좌표, 원점의 y좌표, 반지름" -->
+		<area shape="circle" coords="100,100,50" href="https://google.com">
+		<!-- 사각형 좌표 : coords="x원점, y원점, x크기, y크기 -->
+		<area shape="rect" coords="200,10,300,200" href="https://naver.com">
+	</map>
+	
+</body>
+</html>

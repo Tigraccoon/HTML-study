@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>progress</title>
+<style type="text/css">
+body{
+background-color: #fff;
+}
+ul li{
+list-style: none;
+margin: auto;
+font-size: 20px
+}
+</style>
+</head>
+<body>
+
+<ul>
+<li><label>10초 남음</label>
+<!-- 전체 60초 중에서 50초 진행 완료라는 뜻 -->
+	<progress value="50" max="60"></progress>
+</li>
+<li><label>진행률 30%</label>
+<!-- 전체 100% 중에서 30% 완료됐다는 뜻 -->
+	<progress value="30" max="100"></progress>
+</li>
+</ul>
+
+</body>
+</html>

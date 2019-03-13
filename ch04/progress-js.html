@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>progress-js</title>
+<style type="text/css">
+body {background-color: #ffff00}
+</style>
+<script type="text/javascript">
+function dwn(){
+	var bar=document.getElementById("bar");
+	var progress=document.getElementById("progress");
+	var loaded=0;
+	var pro=function(){	//무명함수(이름이 없는 함수)
+		loaded+=5;
+		bar.value=loaded;
+		progress.value="진행률 : " + loaded;
+		if(loaded == 100){
+			clearInterval(dummyLoad);	//타이머 해제
+			bar.value=0;
+		}
+	};
+	//0.5초마다 load함수 실행(타이머 등록)
+	var dummyLoad=setInterval(pro,200);//(함수이름, 시간)
+}
+</script>
+</head>
+<body>
+
+<input type="button" value="시~작" onclick="dwn()"><br>
+<progress id="bar" value="0" max="100"></progress>
+<span id="progress"></span>
+
+</body>
+</html>

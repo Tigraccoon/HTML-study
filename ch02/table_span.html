@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table_span</title>
+</head>
+<body>
+	
+	<table border="1" style="text-align: center;">
+	<tr style="text-decoration: underline; font-weight: bold;">
+		<th>1열</th>
+		<th>2열</th>
+		<th>3열</th>
+	</tr>
+	<tr>
+		<!-- rowspan : 행병합 -->
+		<td rowspan="2">1행 1열</td>
+		<td>1행 2열</td>
+		<td>1행 3열</td>
+	</tr>
+	<tr>
+		<td>2행 2열</td>
+		<td>2행 3열</td>
+	</tr>
+	<tr>
+		<!-- colspan : 열 병합 -->
+		<td colspan="2">3행 1열</td>
+		<td>3행 2열</td>
+	</tr>
+	</table>
+	
+</body>
+</html>

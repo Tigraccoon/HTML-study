@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>range</title>
+</head>
+<body style="text-align: center;">
+	
+<!-- on이벤트
+onclick : 마우스가 클릭할 때
+onfocus : 필드에 입력포커스를 위치시킬 때
+onblur  : 포커스가 빠져나갈 때
+oninput : 입력이 될 때
+ -->
+<!-- form태그 name이 level인 곳에 value값을 보낸다 -->
+<form oninput="level.value=num.valueAsNumber">
+<label>값을 입력하세요.</label><br>
+<input type="range" id="num" value="1" min="1" max="100"><br>
+
+<!-- id : 현재 웹페이지 내에서 고유한 값 name : 중복 가능 -->
+<!-- id가 num인 값에서 설정된 값이 위의 laval.value=num.valueAsNumber를 통해 숫자로 변환된 값을 받아 출력 -->
+<output for="num" name="level">1</output>
+
+</form>	
+	
+</body>
+</html>

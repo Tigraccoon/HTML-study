@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>list_table_tag</title>
+</head>
+<body>
+	
+	<h1 id="aaa">목록 태그</h1>
+	<ul>
+		<li>마크업 언어
+			<ol>
+				<li>HTML</li>
+				<li>XML</li>
+				<li value="10">SGML</li>
+			</ol>
+		</li>
+		<li>웹 브라우저
+			<ol type="1" start="3">
+				<li>IE</li>
+				<li>Chrom</li>
+				<li>Safari</li>
+				<li>Firefox</li>
+				<li>Opera</li>	
+			</ol>
+		</li>	
+	</ul>
+	
+	<hr>
+	
+	<h1>테이블 태그</h1>
+	<table border="1">
+		<thead>
+			<tr>
+				<th>셀(1,1)</th>
+				<th>셀(1,2)</th>
+				<th>셀(1,3)</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="3">셀(2,1)</td>
+				<td>셀(2,2)</td>
+				<td>셀(2,3)</td>
+			</tr>
+			<tr>
+				<td colspan="2">셀(3,1)</td>
+			</tr>
+			<tr>
+				<td>셀(4,1)</td>
+				<td>셀(4,2)</td>
+			</tr>
+		</tbody>
+	</table>
+	
+	<hr>
+	
+	<a href="https://google.com">웹 사이트 이동 -> 구~글</a><br>
+	<a href="cafe.html">웹 문서간 이동 -> html 글자 태그 실습 에제</a><br>
+	<a href="#aaa">문서 내 이동</a>		
+</body>
+</html>

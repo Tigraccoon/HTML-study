@@ -1,0 +1,64 @@
+<!-- 192.168.0.235 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>formEx</title>
+<style type="text/css">
+fieldset{
+width:500px;
+margin: auto;
+text-align: left;
+font-size: 20px;
+}
+legend{
+text-align: center;
+font-size: 30px
+}
+</style>
+</head>
+<body>
+
+<form action="formEx_result.jsp" method="post">
+<fieldset>
+<legend>로그인 정보</legend>
+아이디 : <input type="text" name="id" placeholder="아이디를 입력하세요!"><br><br>
+비밀번호 : <input type="password" name="pwd" placeholder="비밀번호를 입력하세요!"><br><br>
+</fieldset>
+<br><br>
+<fieldset>
+<legend>가입자 정보</legend>
+이름 : <input type="text" name="name" placeholder="이름을 입력하세요!"><br><br>
+성별 : <input type="radio" name="gender" value="남자" checked="checked">남자&nbsp;<input type="radio" name="gender" value="여자">여자<br><br>
+이메일 : <input type="email" name="email" placeholder="hong@gildong.com"><br><br>
+HP : <input type="tel" name="hp" placeholder="010-1234-5678"><br><br>
+주소 : <input type="text" name="address" placeholder="서울시 중랑구 1"><br><br>
+생년월일 : <input type="date" name="date"><br><br>
+선호하는 색 : <input type="color" name="color"><br><br>
+<br>
+<fieldset style="width: 300px; text-align: center;">
+<legend>선호분야 1</legend>
+<input type="checkbox" name="section1" value="음악">음악&nbsp;<input type="checkbox" name="section1" value="미술">미술<br>
+<input type="checkbox" name="section1" value="IT">IT&nbsp;<input type="checkbox" name="section1" value="자동차">자동차<br>
+<input type="checkbox" name="section1" value="패션">패션&nbsp;<input type="checkbox" name="section1" value="쇼핑">쇼핑<br>
+</fieldset>
+<br><br>
+<fieldset style="width: 300px; text-align: center;">
+<legend>선호분야 2</legend>
+<select name = "section2" style="height: 30px">
+<option value="클래식">클래식</option>
+<option value="째즈">째즈</option>
+<option value="팝송">팝송</option>
+<option value="가요">가요</option>
+</select>
+</fieldset>
+<br>
+<br>
+<input type="image" src="images/send.png" alt="제출버튼" style="margin: auto; display: table;">
+</fieldset>
+
+</form>
+
+</body>
+</html>

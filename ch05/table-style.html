@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>table-style</title>
+<style type="text/css">
+body{display: table; margin: auto; text-align: center;}
+table th, table td{margin: 1px; padding: 8px;}
+table{border-top: 3px solid; border-bottom: 1px solid; border-collapse: collapse;}
+table th{background-color: purple; color: white; border-bottom: 2px solid black; font-size: 1.4em;}
+table td{border-bottom: 1px dotted;}
+caption {font-size: 24px; margin: 5px;}
+tbody > tr:nth-child(odd){background-color: #E0E6F0;}
+tbody > tr:nth-of-type(even) {background-color: rgb(214,158,210);}
+</style>
+</head>
+<body>
+<br><br><br><br><br>
+
+<table>
+ <caption>학교</caption>
+ <thead>
+  <tr>
+   <th>연도</th>
+   <th>학교명</th>
+   <th>주소</th>
+  </tr>
+ </thead>
+ <tbody>
+  <tr>
+   <td>1992</td>
+   <td>소망유치원</td>
+   <td>서울 강동</td>
+  </tr>
+  <tr>
+   <td>1998</td>
+   <td>평화초등학교</td>
+   <td>서울시 송파구 문정동</td>
+  </tr>
+  <tr>
+   <td>2001</td>
+   <td>영광중학교</td>
+   <td>경기도 성남시 분당구 정자동</td>
+  </tr>
+  <tr>
+   <td>2004</td>
+   <td>희망고등학교</td>
+   <td>서울시 강동구 천호동</td>
+  </tr>
+ </tbody>
+</table>
+
+
+</body>
+</html>

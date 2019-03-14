@@ -1,0 +1,36 @@
+<!-- 192.168.0.235 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>homework</title>
+<link type="text/css" rel="stylesheet" href="./include/mystyle3.css">
+</head>
+<body>
+<br><br><br><br><br>
+
+<form id="form1" action="himart.jsp" method="post">
+지점 : 
+<select class="select1" name="location">
+ <option value="강동">강동</option>
+ <option value="강서">강서</option>
+ <option value="강남">강남</option>
+ <option value="강북">강북</option>
+</select><br>
+품명 : 
+<select class="select2" name="name">
+ <option value="청소기">청소기</option>
+ <option value="냉장고">냉장고</option>
+ <option value="전자레인지">전자레인지</option>
+ <option value="핸드폰">핸드폰</option>
+</select><br>
+제품코드 : <input type="text" name="code"><br>
+단가 : <input type="number" name="price"><br>
+수량 : <input type="number" name="amount"><br>
+<input type="checkbox" name="chk" value="y">&nbsp;면세품목<br>
+<input type="submit" value="입력">
+</form>
+
+</body>
+</html>

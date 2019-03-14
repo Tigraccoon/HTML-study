@@ -1,0 +1,9 @@
+/* 192.168.0.235 */
+
+@charset "UTF-8";
+
+#form1{color: #3CFAD7; display: table; margin: auto; text-align: center; 
+text-shadow: 2px 2px 10pt black; }
+form > input{text-decoration: underline;}
+form option{text-align: right;}
+.select1, .select2{width: 100px; height: 60px;}

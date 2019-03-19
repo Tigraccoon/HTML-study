@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>key_anim</title>
+<style type="text/css">
+
+div{
+	width: 100px; height: 100px;
+	background: red;
+	position: relative;
+	animation: 2s myanim;			/* 2초 동안 */
+	animation-iteration-count: 5;	/* 반복 횟수 infinite(무한반복) */
+}
+/* 키프레임 선언 */
+@keyframes myanim{
+0%{left: 0px; top: 0px;}
+25%{left: 100px; top: 50px;}
+50%{left: 200px; top: 100px;}
+75%{left: 100px; top: 50px;}
+100%{left: 0px; top: 0px;}
+}
+
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

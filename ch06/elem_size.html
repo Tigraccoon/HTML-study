@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>elem_size</title>
+<style type="text/css">
+#target1{
+	width: 100px; 
+	height: 50px; 
+	background-color: yellow;
+	resize: both; 	/* 크기 조절 옵션으로 조절 마크가 생긴다. */
+	overflow: auto;	/* 컨텐츠가 길어지면 스크롤바 생김 */
+}
+#target2{
+	width: 100px;
+	height: auto; 		/* 컨텐츠에 따라 사이즈 자동 조절 */
+	background-color: aqua;
+}
+</style>
+</head>
+<body>
+
+<p id="target1">문단 문단 문단 문단 문단 문단 문단</p>
+<div id="target2">구역 구역 구역 구역 구역 구역 구역</div>
+
+</body>
+</html>

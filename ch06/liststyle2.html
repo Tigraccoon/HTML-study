@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+ol {
+	list-style: none; /* none은 ol의 번호 없애기 */
+	text-align: center;
+	border-top: 1px solid red;
+	padding: 10px 0;/* top은 10, 나머지는 0로 패딩처리 */
+}
+ol li{
+    display: inline; /* inline 가로 라인으로 
+    배치처리(한 라인에 여러개 배치) */
+    text-transform: uppercase; /* 대문자로 */
+    padding: 0 10px;
+    letter-spacing: 10px; /* 글자 간격 */
+}
+
+ol li a {text-decoration: none; color:black;}
+ol li a:hover {text-decoration: underline;}
+
+div{display: inline; float: right; border:1px solid red;}
+</style>
+</head>
+<body>
+<ol> <!-- Ordered List 순서있는 목록 -->
+ <li><a href="http://google.com">Home</a></li>
+ <li><a href="#">Blog</a></li>
+ <li><a href="#">About</a></li>
+ <li><a href="#">Contact</a></li>
+</ol>
+<div>div1</div>
+<div>div2</div>
+<div>div3</div>
+</body>
+</html>

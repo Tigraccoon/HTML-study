@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>gradient1</title>
+<style type="text/css">
+div {
+ width: 500px;
+ height: 300px;
+ border-radius: 20px; /* 모서리 라운드 처리  */
+ border: 2px solid red;
+}
+.grad {
+background: #ff0000;
+background: -webkit-linear-gradient(45deg, #ff0000, #ffffff);
+/* 크롬 */
+background: -moz-linear-gradient(45deg, #ff0000, #ffffff);
+/* 파이어폭스 */
+background: -o-linear-gradient(45deg, #ff0000, #ffffff);
+/* 오페라 */
+background: linear-gradient(45deg, #ff0000, #ffffff);
+/* 최신 웹브라우저 */
+}
+</style>
+</head>
+<body>
+<div class="grad"></div>
+</body>
+</html>

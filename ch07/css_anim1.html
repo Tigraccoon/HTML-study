@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>css_anim1</title>
+<style type="text/css">
+
+div{
+	width: 100px; height: 50px; border: 1px solid black;
+	background: yellow;
+	transition: width 300ms, height 300ms;
+	/* 화면 이동(transition) : css에서 제공하는 전이 기법으로 hover와 같은 효과를 만나면 일정 시간 도안 변화하는 과정을 말한다! */
+	/* javascript 대신 간편하게 쓸 수 있다! / s : 초, ms : 밀리초*/
+}
+div:hover {
+	width: 200px; height: 500px;
+}
+
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
